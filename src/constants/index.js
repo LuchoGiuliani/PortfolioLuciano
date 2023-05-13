@@ -1,107 +1,128 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  mysql,
+  node,
+  css,
+  git,
+  angular,
+  tailwind,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  react,
+  rick,
+  reyes,
+  records,
+  comidas,
+  sanitarios,
+  js,
+  css2,
+  express,
+} from "../assets";
 
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "About Me",
   },
   {
     id: "features",
-    title: "Features",
+    title: "Skills",
   },
-  {
-    id: "product",
-    title: "Product",
-  },
+  // {
+  //   id: "product",
+  //   title: "Product",
+  // },
   {
     id: "clients",
-    title: "Clients",
+    title: "Projects",
   },
 ];
 
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Rewards",
+    icon: react,
+    title: "React",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      " I have honed my skills in creating reusable components, organizing my codebase effectively, and utilizing React hooks such as useState to manage component state. In addition, I have gained experience in consuming APIs to fetch data from external sources and integrating it into my React components.",
   },
   {
     id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
+    icon: tailwind,
+    title: "TailwindCSS",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "One of the things I appreciate most about TailwindCSS is its comprehensive set of pre-defined utility classes. This has made it easy for me to style my components quickly and consistently, without having to write a lot of custom CSS",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
+    icon: angular,
+    title: "Angular",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "One of the things that sets Angular apart from other frameworks is its use of TypeScript, which brings the benefits of static typing to JavaScript. This allows for better code organization, enhanced code readability, and ultimately results in fewer bugs and a more maintainable codebase.",
   },
-  
 ];
 
 export const feedback = [
   {
-    id: "feedback-1",
+    id: "Project-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
+      "Arte de Reyes is a venture dedicated to art through various techniques such as murals, comics, fabric painting, etc.",
+    name: "Arte De Reyes",
+    title: "React - Vite Js - Deployment - TailwindCSS",
+    img: reyes,
+    link: "https://artedereyes.netlify.app/"
   },
   {
-    id: "feedback-2",
+    id: "Project-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
+      "A music production company focused on achieving the growth of artists. This place has a studio equipped with the latest in technology. Don't hesitate to visit.",
+    name: "Vito Records",
+    title: "React - Vite Js - Deployment - TailwindCSS",
+    img: records,
+    link: "https://vitorecordsarg.netlify.app/"
   },
   {
-    id: "feedback-3",
+    id: "Project-3",
     content:
       "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
+    name: "API Rick and Morty",
+    title: "React -  Vite Js -  Deployment -  TailwindCSS  -  API",
+    img: rick,
   },
   {
-    id: "feedback-4",
+    id: "Project-4",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Luciano Giu",
-    title: "Founder & Leader",
-    img: people03,
+      "My first project, built together with a group of colleagues from the Digital House course. A beautiful experience not only on a technical/individual level but also in terms of working as a team.",
+    name: "Sanitarios Nicuesa",
+    title: "React - Node - JavaScript - HTML - CSS - MySQL",
+    img: sanitarios,
   },
   {
-    id: "feedback-4",
+    id: "project-5",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Facu B",
-    title: "Founder & Leader",
-    img: people03,
+      "Home-cooked meals made with love for the past 25 years, offering a different menu every day. Don't hesitate to visit the website and enjoy their delicacies.",
+    name: "cHolu",
+    title: "React - Vite Js - Deployment - TailwindCSS",
+    img: comidas,
   },
 ];
 
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Proactive",
+    value: "",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Creativity",
+    value: "",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Collaboration",
+    value: "",
   },
 ];
 
@@ -197,18 +218,30 @@ export const socialMedia = [
 export const clients = [
   {
     id: "client-1",
-    logo: airbnb,
+    logo: mysql,
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: css,
   },
   {
     id: "client-3",
-    logo: coinbase,
+    logo: git,
   },
   {
     id: "client-4",
-    logo: dropbox,
+    logo: node,
+  },
+  {
+    id: "client-5",
+    logo: js,
+  },
+  {
+    id: "client-6",
+    logo: css2,
+  },
+  {
+    id: "client-7",
+    logo: express,
   },
 ];

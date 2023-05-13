@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import { close, linkedin, logo, menu } from "../assets";
+import { close, linkedin,logo, menu } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="w.full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
+      <img src={logo} alt="hoobank" className="w-[162px] h-[76px]" />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -18,7 +18,7 @@ const Navbar = () => {
               index === navLinks.length - 1 ? "mr-10" : "mr-10"
             }  text-white`}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <a className="hover:text-[#9fdedf]" href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>

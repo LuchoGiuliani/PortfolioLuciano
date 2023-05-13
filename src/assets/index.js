@@ -4,7 +4,7 @@ import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
@@ -23,8 +23,40 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import perfil from "./perfil.png";
+import reyes from "./reyes.png";
+import rick from "./rick.png";
+import comidas from "./comidas.jpg";
+import sanitarios from "./sanitarios.png";
+import records from "./records.jpg";
+import react from "./react.png";
+import tailwind from "./tailwind.png";
+import angular from "./angular.png";
+import git from "./git.png";
+import mysql from "./mysql.png";
+import node from "./node.png";
+import css from "./css.png";
+import css2 from "./css2.png";
+import js from "./js.png";
+import express from "./express.png"
 
 export {
+  css2,
+  js,
+  express,
+  css,
+  node,
+  git,
+  mysql,
+  angular,
+  tailwind,
+  react,
+  sanitarios,
+  records,
+  comidas,
+  rick,
+  reyes,
+  perfil,
   airbnb,
   bill,
   binance,
