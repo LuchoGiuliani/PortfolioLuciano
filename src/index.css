@@ -8,7 +8,7 @@
   --black-gradient: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
-    #6d6d6d -78.47%,
+    #3e5c6a -78.47%,
     #11101d 91.61%
   );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
@@ -16,6 +16,11 @@
 
 * {
   scroll-behavior: smooth;
+}
+
+.cont {
+  overflow-x: hidden;
+  
 }
 
 
@@ -28,7 +33,7 @@
     #9dedf0 42.04%,
     #7de7eb 55.12%,
     #5ce1e6 71.54%,
-    #33bbcf 100%
+    #1d899a 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

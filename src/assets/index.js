@@ -1,12 +1,12 @@
 import airbnb from "./airbnb.png";
-import bill from "./bill.png";
+
 import binance from "./binance.png";
 import card from "./card.png";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
 import logo from "./logo.png";
 import quotes from "./quotes.svg";
-import robot from "./robot.png";
+
 import send from "./Send.svg";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
@@ -20,15 +20,15 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
-import people01 from "./people01.png";
-import people02 from "./people02.png";
-import people03 from "./people03.png";
-import perfil from "./perfil.png";
-import reyes from "./reyes.png";
+
+
+
+import perfil from "./perfil-min.webp";
+import reyes from "./reyes-min.webp";
 import rick from "./rick.png";
-import comidas from "./comidas.jpg";
-import sanitarios from "./sanitarios.png";
-import records from "./records.jpg";
+import comidas from "./comidas-min.webp";
+import sanitarios from "./sanitarios-min.webp";
+import records from "./records-min.webp";
 import react from "./react.png";
 import tailwind from "./tailwind.png";
 import angular from "./angular.png";
@@ -37,10 +37,14 @@ import mysql from "./mysql.png";
 import node from "./node.png";
 import css from "./css.png";
 import css2 from "./css2.png";
+import css3 from "./css3.webp";
+import cachi from "./cachi-min.webp";
 import js from "./js.png";
 import express from "./express.png"
 
 export {
+  cachi,
+  css3,
   css2,
   js,
   express,
@@ -58,14 +62,14 @@ export {
   reyes,
   perfil,
   airbnb,
-  bill,
+  
   binance,
   card,
   coinbase,
   dropbox,
   logo,
   quotes,
-  robot,
+ 
   send,
   shield,
   star,
@@ -79,7 +83,7 @@ export {
   instagram,
   linkedin,
   twitter,
-  people01,
-  people02,
-  people03,
+ 
+  
+  
 };

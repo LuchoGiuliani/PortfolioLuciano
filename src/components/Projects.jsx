@@ -3,7 +3,7 @@ import { feedback } from "../constants";
 import styles from "../style";
 import FeedbackCard from "./FeedbackCard";
 
-const Testimonials = () => (
+const Projects = () => (
   <section
     id="clients"
     className={` testimonial-section ${styles.paddingY} ${styles.flexCenter} flex-col relative`}
@@ -23,7 +23,7 @@ const Testimonials = () => (
         </p>
       </div>
     </div>
-    <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
+    <div className="flex flex-wrap  justify-center w-full feedback-container relative z-[1]">
       {feedback.map((card) => (
         <FeedbackCard key={card.id} {...card} />
       ))}
@@ -31,4 +31,4 @@ const Testimonials = () => (
   </section>
 );
 
-export default Testimonials;
+export default Projects;

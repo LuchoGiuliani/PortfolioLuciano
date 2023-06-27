@@ -2,6 +2,7 @@ import {
   mysql,
   node,
   css,
+  css3,
   git,
   angular,
   tailwind,
@@ -10,6 +11,7 @@ import {
   linkedin,
   twitter,
   react,
+  cachi,
   rick,
   reyes,
   records,
@@ -39,27 +41,27 @@ export const navLinks = [
   },
 ];
 
-export const features = [
+export const skillsCard = [
   {
     id: "feature-1",
     icon: react,
     title: "React",
     content:
-      " I have honed my skills in creating reusable components, organizing my codebase effectively, and utilizing React hooks such as useState to manage component state. In addition, I have gained experience in consuming APIs to fetch data from external sources and integrating it into my React components.",
+      " I have honed my skills in creating reusable components, organizing my codebase effectively, and utilizing React hooks such as useState to manage component state.",
   },
   {
     id: "feature-2",
     icon: tailwind,
     title: "TailwindCSS",
     content:
-      "One of the things I appreciate most about TailwindCSS is its comprehensive set of pre-defined utility classes. This has made it easy for me to style my components quickly and consistently, without having to write a lot of custom CSS",
+      "One of the things I appreciate most about TailwindCSS is its comprehensive set of pre-defined utility classes.",
   },
   {
     id: "feature-3",
-    icon: angular,
-    title: "Angular",
+    icon: css2,
+    title: "CSS",
     content:
-      "One of the things that sets Angular apart from other frameworks is its use of TypeScript, which brings the benefits of static typing to JavaScript. This allows for better code organization, enhanced code readability, and ultimately results in fewer bugs and a more maintainable codebase.",
+      "CSS was one of the first languages I learned. I gained knowledge  about how to make a webpage responsive using media queries.",
   },
 ];
 
@@ -78,17 +80,18 @@ export const feedback = [
     content:
       "A music production company focused on achieving the growth of artists. This place has a studio equipped with the latest in technology. Don't hesitate to visit.",
     name: "Vito Records",
-    title: "React - Vite Js - Deployment - TailwindCSS",
+    title: "React - Canvas - Deployment - TailwindCSS",
     img: records,
     link: "https://vitorecordsarg.netlify.app/"
   },
   {
     id: "Project-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "API Rick and Morty",
-    title: "React -  Vite Js -  Deployment -  TailwindCSS  -  API",
-    img: rick,
+      "I have the privilege of working with my sister on her own Portfolio.",
+    name: "Cachi Audiovisual",
+    title: "React -  Vite Js -  GSAP -  TailwindCSS",
+    img: cachi,
+    link: "https://carlagiuliani.netlify.app/",
   },
   {
     id: "Project-4",
@@ -101,7 +104,7 @@ export const feedback = [
   {
     id: "project-5",
     content:
-      "Home-cooked meals made with love for the past 25 years, offering a different menu every day. Don't hesitate to visit the website and enjoy their delicacies.",
+      "Home-cooked meals made with love for the past 25 years, offering a different menu every day. ",
     name: "cHolu",
     title: "React - Vite Js - Deployment - TailwindCSS",
     img: comidas,
@@ -215,33 +218,33 @@ export const socialMedia = [
   },
 ];
 
-export const clients = [
+export const skills = [
   {
-    id: "client-1",
+    id: "1",
     logo: mysql,
   },
   {
-    id: "client-2",
+    id: "2",
     logo: css,
   },
   {
-    id: "client-3",
+    id: "3",
     logo: git,
   },
   {
-    id: "client-4",
+    id: "4",
     logo: node,
   },
   {
-    id: "client-5",
+    id: "5",
     logo: js,
   },
   {
-    id: "client-6",
+    id: "6",
     logo: css2,
   },
   {
-    id: "client-7",
+    id: "7",
     logo: express,
   },
 ];

@@ -1,13 +1,12 @@
 import React from "react";
-
-import { features } from "../constants";
+import { skillsCard, skills } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
 
-const FeatureCard = ({ icon, title, content, index }) => (
+const SkillCard = ({ icon, title, content, index }) => (
   <div
     className={`flex flex-row p-6 rounded-[20px] ${
-      index !== features.length - 1 ? "mb-6" : "mb-0"
+      index !== skillsCard.length - 1 ? "mb-6" : "mb-0"
     } feature-card `}
   >
     <div
@@ -26,32 +25,50 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-const Business = () => {
+const Skills = () => {
   return (
-    <section id="features" className={layout.section}>
-      <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>
-          {" "}
-          Hello World , <br className="sm:block hidden" />
-          thank you for watching.
-        </h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          As a front-end developer, I am always open to new ideas and
-          willing to collaborate with my team members to find the best possible
-          solution. This approach allows me to resolve problems in a timely and
-          efficient manner, minimizing any negative impact on the project
-          timeline.
-        </p>
-        <Button styles="mt-10" />
-      </div>
+    <>
+      <section id="features" className={layout.section}>
+        <div className={`items-center sm:items-start ${layout.sectionInfo}`}>
+          <h2 className={`text-center sm:text-start ${styles.heading2}`}>
+            Hello World , <br className="sm:block hidden" />
+            thank you for watching.
+          </h2>
+          <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+            As a front-end developer, I am always open to new ideas and willing
+            to collaborate with my team members to find the best possible
+            solution. 
+          </p>
+          <Button styles="mt-10" />
+        </div>
 
-      <div className={`${layout.sectionImg} flex-col`}>
-        {features.map((feature, index) => (
-          <FeatureCard key={feature.id} {...feature} index={index} />
-        ))}
-      </div>
-    </section>
+        <div className={`${layout.sectionImg} flex-col`}>
+          {skillsCard.map((feature, index) => (
+            <SkillCard key={feature.id} {...feature} index={index} />
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <section className={`${styles.flexCenter} my-4`}>
+          <div className={`${styles.flexCenter} flex-wrap w-full`}>
+            {skills.map((skill) => (
+              <div
+                key={skill.id}
+                className={` flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px]`}
+              >
+                <img
+                  src={skill.logo}
+                  alt="client"
+                  className="sm:w-[97px] w-[100px] object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      </section>
+    </>
   );
 };
 
-export default Business;
+export default Skills;

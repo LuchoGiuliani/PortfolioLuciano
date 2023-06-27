@@ -1,21 +1,19 @@
 import Navbar from "./Navbar";
 
 
-import Business from "./Skills";
-import Clients from "./Clients";
-import CTA from "./CTA";
+import Skills from "./Skills";
+import ContactMe from "./ContactMe";
 import Stats from "./Stats";
 import Footer from "./Footer";
-import Testimonials from "./Projects";
+import Projects from "./Projects";
 import Hero from "./Hero";
 
 export {
   Navbar,
-  Business,
-  Clients,
-  CTA,
+  Skills,
+  ContactMe,
   Stats,
-  Testimonials,
+  Projects,
   Footer,
   Hero,
 };
