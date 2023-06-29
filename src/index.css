@@ -20,10 +20,7 @@
 
 .cont {
   overflow-x: hidden;
-  
 }
-
-
 
 .text-gradient {
   background: radial-gradient(
@@ -144,4 +141,37 @@
 .white__gradient {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
+}
+
+
+
+ /*  SECTION SCROLL TRIGGER PARRAFO   */
+
+
+.banner {
+  white-space: nowrap;
+  width: 200vw;
+  font-size: 126px;
+  font-weight: 400;
+  letter-spacing: -3px;
+}
+
+.banner2 {
+  letter-spacing: -3px;
+  font-size: 126px;
+  font-weight: 400;
+  white-space: nowrap;
+  width: 200vw;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    font-size:42px;
+    letter-spacing: -2px;
+  }
+  .banner2 {
+    font-size:42px;
+    letter-spacing: -2px;
+  }
+
 }

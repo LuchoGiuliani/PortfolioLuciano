@@ -9,6 +9,7 @@ import {
   Projects,
   ContactMe,
   Footer,
+  Banner,
 } from "./components";
 
 const App = () => {
@@ -21,10 +22,11 @@ const App = () => {
       </div>
 
       <div className={`bg-primary ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth} panel`}>
-          <Hero />
+        <div className={`${styles.boxWidth} panel h-screen`}>
+          <Hero className="" />
         </div>
       </div>
+          <Banner />
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
