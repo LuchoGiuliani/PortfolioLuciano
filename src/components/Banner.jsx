@@ -10,7 +10,7 @@ function Banner() {
     gsap.to(".banner", {
       scrollTrigger: {
         trigger: "bottom center",
-        markers: true,
+        
         
         scrub: true,
       },
@@ -23,7 +23,7 @@ function Banner() {
     gsap.to(".banner2", {
       scrollTrigger: {
         trigger: ".top center",
-        markers: true,
+       
         scrub: true,
         
       },
