@@ -31,13 +31,13 @@ const App = () => {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth} panel h-screen`}>
           <Hero className="" />
+          <Stats />
         </div>
       </div>
-          <Banner />
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Stats />
+          <Banner />
 
           <Skills />
 
