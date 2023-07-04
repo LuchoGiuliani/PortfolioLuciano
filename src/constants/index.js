@@ -59,9 +59,10 @@ export const skillsCard = [
   {
     id: "feature-3",
     icon: css2,
-    title: "CSS",
+    title: "GSAP",
     content:
-      "CSS was one of the first languages I learned. I gained knowledge  about how to make a webpage responsive using media queries.",
+    "Recently, I have been working with this tool, and it's amazing what we can do with it."
+
   },
 ];
 

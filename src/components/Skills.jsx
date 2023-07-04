@@ -82,7 +82,7 @@ const Skills = () => {
               >
                 <img
                   src={skill.logo}
-                  alt="client"
+                  alt="skill logo"
                   className="sm:w-[97px] w-[100px] object-contain img_skills"
                 />
               </div>

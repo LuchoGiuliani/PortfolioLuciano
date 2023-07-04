@@ -36,7 +36,7 @@ import git from "./git.png";
 import mysql from "./mysql.png";
 import node from "./node.png";
 import css from "./css.png";
-import css2 from "./css2.png";
+import css2 from "./css2.webp";
 import css3 from "./css3.webp";
 import cachi from "./cachi-min.webp";
 import js from "./js.png";
