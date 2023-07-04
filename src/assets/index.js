@@ -23,7 +23,7 @@ import twitter from "./twitter.svg";
 
 
 
-import perfil from "./perfil-min.webp";
+import perfil from "./perfil_hero.jpg";
 import reyes from "./reyes-min.webp";
 import rick from "./rick.png";
 import comidas from "./comidas-min.webp";
