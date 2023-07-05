@@ -7,8 +7,7 @@ const Hero = () => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}   `}>
      <div className="absolute z-[0] w-[60%] h-[60%] -left-[60%] rounded-full blue__gradient">
     </div>
-     <div className="absolute z-[0] w-[220px] h-[220px] left-[80%] rounded-full blue__gradient">
-    </div>
+    
    
      
    
@@ -36,7 +35,7 @@ const Hero = () => (
       <img
         src={perfil}
         alt="perfil"
-        className=" p-2 sm:p-4  saturate-60 h-[420px]  rounded-full z-[5]"
+        className=" p-2 sm:p-4  saturate-60 h-[380px] w-[340px]  rounded-[180px] z-[5]"
       />
       {/* <div className="absolute z-[0] w-[20%] h-[25%] top-10 pink__gradient"></div>
       <div className="absolute z-[1] w-[60%] h-[80%] rounded-full top-10 bottom-40 white__gradient"></div>
