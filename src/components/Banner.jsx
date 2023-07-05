@@ -29,7 +29,7 @@ function Banner() {
   }, []);
 
   return (
-    <div className="flex items-center flex-col">
+    <div className="flex items-center flex-col p-6">
       <p className="banner text-white  ">
         I LOVE CODE <span className="text-blue-500">YOU LIKE CODE</span> YOU
         LIKE CODE WE NEED CODE LOVE CODE I LOVE CODE
