@@ -35,15 +35,13 @@ const Hero = () => (
       <img
         src={perfil}
         alt="perfil"
-        className=" p-2 sm:p-4  saturate-60 h-[380px] w-[340px]  rounded-[180px] z-[5]"
+        className="max-w-[480px] max-h-[360px] rounded-xl z-10 skew-x-1 "
       />
-      {/* <div className="absolute z-[0] w-[20%] h-[25%] top-10 pink__gradient"></div>
-      <div className="absolute z-[1] w-[60%] h-[80%] rounded-full top-10 bottom-40 white__gradient"></div>
-      <div className="absolute z-[0] w-[20%] h-[20%] right-20 bottom-20 blue__gradient top-0"></div> */}
+     {/* <div className="absolute z-[0] w-[20%] h-[25%] top-10 pink__gradient"></div>
+      <div className="absolute z-[1] w-[60%] h-[80%] rounded-full top-10 bottom-40 white__gradient"></div> */}
+      <div className="absolute z-[0] w-[202%] h-[20%] right-30 bottom-20 blue__gradient top-0"></div>
     </div>
-    <div className={`ss:hidden ${styles.flexCenter}`}>
-      <GetStarted />
-    </div>
+    
   </section>
 );
 

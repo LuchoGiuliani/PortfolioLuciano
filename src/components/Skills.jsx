@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const SkillCard = ({ icon, title, content, index }) => (
   <div
-    className={`flex flex-row p-6 rounded-[20px] ${
+    className={`flex flex-row p-6 rounded-[20px]  ${
       index !== skillsCard.length - 1 ? "mb-6" : "mb-0"
     } feature-card `}
   >
@@ -50,9 +50,9 @@ const Skills = () => {
 
 
   return (
-    <>
+    <div className="">
       <section id="features" className={layout.section}>
-        <div className={`items-center sm:items-start ${layout.sectionInfo}`}>
+        <div className={` items-center sm:items-start ${layout.sectionInfo}`}>
           <h2 className={`text-center sm:text-start ${styles.heading2}`}>
             Hello World , <br className="sm:block hidden" />
             thank you for watching.
@@ -90,7 +90,7 @@ const Skills = () => {
           </div>
         </section>
       </section>
-    </>
+    </div>
   );
 };
 

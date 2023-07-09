@@ -10,8 +10,7 @@ function Banner() {
     gsap.to(".banner", {
       scrollTrigger: {
         trigger: "bottom center",
-        scrub: true,
-       
+        scrub: true,     
       },
       
       ease: "power3",
