@@ -15,7 +15,7 @@ const Hero = () => (
       className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
     >
       <div className="flex flex-row justify-between items-center w-full ">
-        <h1 className="flex-1 font-poppings font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100px] leading-[75px] sm:text-left text-center">
+        <h1 className="flex-1 font-poppings font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[80px] leading-[75px] sm:text-left text-center">
           Front-End <br className="sm:block hidden" />{" "}
           <span className="">Developer</span>{" "}
         </h1>

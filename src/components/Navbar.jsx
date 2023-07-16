@@ -14,11 +14,11 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins font-normal hover:scale-110 cursor-pointer text-[16px] ${
               index === navLinks.length - 1 ? "mr-10" : "mr-10"
             }  text-white`}
           >
-            <a className="hover:text-[#9fdedf] hover:line-through  " href={`#${nav.id}`}>{nav.title}</a>
+            <a className="hover:text-[#9fdedf] hover:line-through" href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
       </ul>

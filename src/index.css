@@ -111,10 +111,10 @@
   }
 }
 
-.feature-card:hover {
+/* .feature-card:hover {
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
-}
+} */
 
 .feedback-container .feedback-card:last-child {
   margin-right: 0px;
@@ -124,9 +124,9 @@
   background: transparent;
 }
 
-.feedback-card:hover {
+/* .feedback-card:hover {
   background: var(--black-gradient);
-}
+} */
 
 .blue__gradient {
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 10%);
@@ -176,4 +176,21 @@
 
 }
 
+/*  SCROLL BAR   */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #79b2d1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e4b6b; 
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #202249; 
+}
