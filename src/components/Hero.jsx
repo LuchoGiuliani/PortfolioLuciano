@@ -8,24 +8,24 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const Hero = () => {
   const refH1 = useRef()
-  const text = new SplitType('#title_h1')
-
-  console.log(text);
-
+  
+  
+  
   useEffect(() => { 
-  const characters = document.querySelectorAll(".char")
+    const text = new SplitType('#title_h1')
+   const characters = document.querySelectorAll(".char")
     gsap.to(characters, { 
        y:0, 
-       stagger:0.05, 
+       stagger:0.05,   
        delay: 0.2,   
-       duration: 0.1,
+       duration: 0.1, 
     })
   }, [])
  
 
 
 return (
-  <section ref={refH1} id="home" className={`flex md:flex-row flex-col ${styles.paddingY}   `}>
+  <section  id="home" className={`flex md:flex-row flex-col ${styles.paddingY}   `}>
      <div className="absolute z-[0] w-[60%] h-[60%] -left-[60%] rounded-full blue__gradient">
     </div>  
    
@@ -33,7 +33,7 @@ return (
       className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
     >
       <div className="flex flex-row justify-between items-center w-full ">
-        <h1  id="title_h1" className="flex-1 font-poppings font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[80px] leading-[75px] sm:text-left text-center">
+        <h1   id="title_h1" className="flex-1 font-poppings font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[80px] leading-[75px] sm:text-left text-center">
           Front-End <br className="sm:block hidden" />{" "}
           <span className="">Developer</span>{" "}
         </h1>
@@ -41,7 +41,7 @@ return (
           <GetStarted />
         </div>
       </div>
-      <h1 className="font-poppings font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full"></h1>
+      <h1  className="font-poppings font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full"></h1>
       <p className={`  ${styles.paragraph} max-w-[470px] mt-5`}>
         Hi there! My name is <em className="text-sky-400 ">Luciano Giuliani</em>{" "}
         and I am a passionate front-end developer with a desire to constantly
