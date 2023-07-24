@@ -9,7 +9,7 @@ import {
   Footer,
   Banner,
 } from "./components";
-
+import { motion } from "framer-motion"
 import { useState, useEffect, useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -17,6 +17,42 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
+  const [mousePosition,setMousePosition] = useState({
+    x:0,
+    y:0
+  })
+
+  const [cursorVariant, setCursorVariant] = useState("default")
+
+  useEffect(() => {
+    const mouseMove = (e) => {
+      setMousePosition({
+      x: e.clientX,
+      y: e.clientY
+    })
+  }
+  window.addEventListener("mousemove",mouseMove)
+  return () => {
+    window.removeEventListener("mousemove",mouseMove)
+  } 
+  }, [])
+
+  const variants = {
+    default : {
+      x: mousePosition.x -10,
+      y: mousePosition.y -10
+    },
+    text:{
+      height: 80,
+      width: 80,
+      x: mousePosition.x -3,
+      y: mousePosition.y -3,
+    },
+    
+  }
+  const textEnter = () => setCursorVariant("text");
+  const textLeave = () => setCursorVariant("default");
+  
   const main = useRef()
   useEffect(() => {
     const colorChange = gsap.utils.toArray(".box");
@@ -46,8 +82,16 @@ const App = () => {
   });
 }, [main]);
 
+
+
   return (
-    <div className="bg-primary w-full  cont body overflow-hidden">
+    <div className="bg-primary w-full  cont body overflow-hidden" onMouseEnter={textEnter}
+    onMouseLeave={textLeave}>
+ <motion.div
+        className="cursor"
+        variants={variants}
+        animate={cursorVariant}
+      />
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />

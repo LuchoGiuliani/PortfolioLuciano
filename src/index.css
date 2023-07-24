@@ -204,3 +204,12 @@ h1 {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   line-height: 5.9rem;
 } 
+
+.cursor {
+  border-radius: 50%;
+  background-color: #ffffff;
+  filter: blur(4.1rem);
+  position: fixed;
+  top: 0;
+  left: 10px;
+}
