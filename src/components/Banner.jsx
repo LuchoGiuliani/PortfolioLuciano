@@ -10,7 +10,7 @@ function Banner() {
   useEffect(() => {
     gsap.to(".banner", {
       scrollTrigger: {
-        trigger: "bottom center",
+       
         scrub: true,     
       },
       
@@ -19,7 +19,7 @@ function Banner() {
     });
     gsap.to(".banner2", {
       scrollTrigger: {
-        trigger: "top center",
+       
         scrub: true,
       },
 
