@@ -1,7 +1,8 @@
 import React from "react";
-import { quotes, reyes } from "../assets";
 import Tilt from 'react-parallax-tilt';
+
 const FeedbackCard = ({ content, name, title, img, link }) => (
+
   <div className="flex justify-between flex-col px-10 py-4  max-w-[356px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card rounded-lg">
     <Tilt>
     <a href={link} target="_blank">
@@ -24,8 +25,7 @@ const FeedbackCard = ({ content, name, title, img, link }) => (
         </div>
       </div>
     </a>
-    </Tilt>
-    
+    </Tilt>  
   </div>
 );
 

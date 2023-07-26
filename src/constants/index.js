@@ -1,4 +1,5 @@
 import {
+  ml,
   mysql,
   node,
   css,
@@ -20,6 +21,7 @@ import {
   js,
   css2,
   express,
+  calcu
 } from "../assets";
 
 export const navLinks = [
@@ -109,6 +111,22 @@ export const feedback = [
     name: "cHolu",
     title: "React - Vite Js - Deployment - TailwindCSS",
     img: comidas,
+  },
+  {
+    id: "project-6",
+    content:
+      "My first Calculator using javaScript and node. ",
+    name: "Calculator",
+    title: "Js - Node",
+    img: calcu,
+  },
+  {
+    id: "project-7",
+    content:
+      "MY first project using node, ejs, css and Github ",
+    name: "ML Demo",
+    title: "Js - Node",
+    img: ml,
   },
 ];
 

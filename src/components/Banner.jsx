@@ -7,9 +7,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Banner() {
 
-
-
-
   useEffect(() => {
     gsap.to(".banner", {
       scrollTrigger: {

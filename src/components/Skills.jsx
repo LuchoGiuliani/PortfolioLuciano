@@ -2,12 +2,6 @@ import React from "react";
 import { skillsCard, skills } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useEffect } from "react";
-
-gsap.registerPlugin(ScrollTrigger)
-
 
 const SkillCard = ({ icon, title, content, index }) => (
   <div
@@ -32,23 +26,6 @@ const SkillCard = ({ icon, title, content, index }) => (
 );
 
 const Skills = () => {
-
-  // useEffect(() => {
-
-  //   gsap.to(".img_skills", {
-  //     rotation:360,
-  //     duration:3,
-  //     pin:".img_skills",
-  //     scrollTrigger:{
-  //      trigger:".img_skills"
-
-  //     }
-  //   }) 
-
-  // },[]);
-
-
-
   return (
     <div className="">
       <section id="features" className={layout.section}>

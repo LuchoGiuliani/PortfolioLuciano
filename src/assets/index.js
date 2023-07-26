@@ -1,12 +1,14 @@
-import airbnb from "./airbnb.png";
 
-import binance from "./binance.png";
+
+
 import card from "./card.png";
-import coinbase from "./coinbase.png";
-import dropbox from "./dropbox.png";
+
+
 import logo from "./logo.png";
 import quotes from "./quotes.svg";
 
+
+import calcu from "./calcu.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
 import star from "./Star.svg";
@@ -20,7 +22,7 @@ import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
-
+import ml from "./ML.png";
 
 
 import perfil from "./perfil.png";
@@ -61,12 +63,12 @@ export {
   rick,
   reyes,
   perfil,
-  airbnb,
+  ml,
+  calcu,
   
-  binance,
   card,
-  coinbase,
-  dropbox,
+ 
+
   logo,
   quotes,
  

@@ -3,7 +3,7 @@ import {stats } from '../constants'
 import styles from '../style'
 
 const Stats = () =>  (
-  <section className={`${styles.flexCenter} flex-row justify-center items-center pt-10 sm:mb-10 mb-6`}>
+  <section className={`${styles.flexCenter} flex-row justify-center items-center  sm:pt-10 sm:mb-10 mb-6`}>
     {stats.map((stat) =>(
       <div key={stat.id} className={`flex-1  flex justify-center items-center flex-row m-3 mt-12`}>
         <h4 className='font-poppins font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white '>{stat.value}</h4>

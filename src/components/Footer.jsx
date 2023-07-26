@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../style'
 import {logo} from '../assets'
-import {footerLinks, socialMedia} from '../constants'
+import {socialMedia} from '../constants'
 const Footer = () => (
   <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
@@ -13,8 +13,7 @@ const Footer = () => (
 
     <div className='w-full flex justify-around items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]'>
       <p className='font-poppins font-normal text-center text-[18px] leading-[27px] text-white'>
-      Copyright 2022 Luciano Giuliani. All Rights Reserved.
-                    
+      Copyright 2022 Luciano Giuliani. All Rights Reserved.               
       </p>
       <div className='flex flex-row md:mt-0 mt-6'>
         {socialMedia.map((social,index)=>(
