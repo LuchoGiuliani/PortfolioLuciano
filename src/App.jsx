@@ -63,7 +63,7 @@ const App = () => {
     colorChange.forEach((box) => {
       ScrollTrigger.create({
         trigger: box,
-        start: "top + 150px",
+        start: "top 150px",
         end: "bottom top -50px",
 
         onEnter: () => {
@@ -76,6 +76,7 @@ const App = () => {
         onLeaveBack: () => {
           gsap.to(box, {
             backgroundColor: "#00040f",
+             
             duration: 1.5,
           });
         },

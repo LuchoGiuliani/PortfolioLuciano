@@ -25,10 +25,10 @@ import twitter from "./twitter.svg";
 import ml from "./ML.png";
 
 
-import perfil from "./perfil.png";
+import perfil from "./perfil_min.png";
 import reyes from "./reyes-min.webp";
 import rick from "./rick.png";
-import comidas from "./comidas-min.webp";
+import comidas from "./comidas-min.png";
 import sanitarios from "./sanitarios-min.webp";
 import records from "./records-min.webp";
 import react from "./react.png";

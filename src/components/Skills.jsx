@@ -43,15 +43,11 @@ const Skills = () => {
         </div>
 
         <div className={`${layout.sectionImg} flex-col`}>
-          {skillsCard.map((feature, index) => (
+          {/* {skillsCard.map((feature, index) => (
             <SkillCard key={feature.id} {...feature} index={index} />
-          ))}
-        </div>
-      </section>
-
-      <section>
+          ))} */}
         <section className={`${styles.flexCenter} my-4`}>
-          <div className={`${styles.flexCenter} flex-wrap w-full`}>
+          <div className={`flex justify-between items-center flex-wrap  gap-3`}>
             {skills.map((skill) => (
               <div
                 key={skill.id}
@@ -66,6 +62,10 @@ const Skills = () => {
             ))}
           </div>
         </section>
+        </div>
+      </section>
+
+      <section>
       </section>
     </div>
   );

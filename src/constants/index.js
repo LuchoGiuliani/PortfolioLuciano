@@ -123,7 +123,7 @@ export const feedback = [
   {
     id: "project-7",
     content:
-      "MY first project using node, ejs, css and Github ",
+      "My first project using node, ejs, css and Github ",
     name: "ML Demo",
     title: "Js - Node",
     img: ml,
@@ -262,8 +262,13 @@ export const skills = [
     id: "6",
     logo: css2,
   },
+ 
   {
-    id: "7",
-    logo: express,
+    id: "8",
+    logo: react,
+  },
+  {
+    id: "9",
+    logo: tailwind,
   },
 ];
