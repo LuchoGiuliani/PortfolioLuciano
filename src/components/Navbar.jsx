@@ -2,14 +2,18 @@ import React from "react";
 import { useState } from "react";
 import { close, linkedin,logo, menu } from "../assets";
 import { navLinks } from "../constants";
+import { useLanguage } from "../context/LanguageContext";
+import {spanish,english} from "../assets"
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
+  const { currentLanguage, toggleLanguage } = useLanguage();
+  
   return (
     <nav className="w.full flex pt-2 sm:pt-6 justify-between items-center navbar">
       {/* <img src={logo} alt="hoobank" className="w-[162px] h-[76px]" /> */}
-      <h1 className="text-white  text-lg	">Luciano Giuliani</h1>
+      <h1 className="text-white  text-lg">Luciano Giuliani</h1>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -18,7 +22,7 @@ const Navbar = () => {
               index === navLinks.length - 1 ? "mr-10" : "mr-10"
             }  text-white`}
           >
-            <a className="hover:text-[#9fdedf] hover:line-through" href={`#${nav.id}`}>{nav.title}</a>
+            <a className="hover:text-[#9fdedf] hover:line-through" href={`#${nav.id}`}>{currentLanguage === "en" ? nav.title : nav.titleSpanish}</a>
           </li>
         ))}
       </ul>
@@ -40,7 +44,7 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                  index === navLinks.length - 1 ? "mr-0" : "mb-4"
+                  index === navLinks.length - 1 ? "mr-0" : "mb-0"
                 }  text-white`}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
@@ -49,6 +53,10 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <nav>
+      <button className="text-white" onClick={toggleLanguage}><img className="p-1 max-w-[34px]" src={currentLanguage === "en" ? english : spanish } alt="" /></button>
+      
+    </nav>
     </nav>
   );
 };

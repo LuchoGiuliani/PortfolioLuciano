@@ -21,25 +21,28 @@ import {
   js,
   css2,
   express,
-  calcu
+  calcu,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "home",
     title: "About Me",
+    titleSpanish: "Sobre mi",
   },
   {
-    id: "features",
+    id: "skills",
     title: "Skills",
+    titleSpanish: "Habilidades",
   },
   // {
   //   id: "product",
   //   title: "Product",
   // },
   {
-    id: "clients",
+    id: "projects",
     title: "Projects",
+    titleSpanish: "Proyectos",
   },
 ];
 
@@ -50,6 +53,7 @@ export const skillsCard = [
     title: "React",
     content:
       " I have honed my skills in creating reusable components, organizing my codebase effectively, and utilizing React hooks such as useState to manage component state.",
+    contentSpanish: "",
   },
   {
     id: "feature-2",
@@ -57,15 +61,14 @@ export const skillsCard = [
     title: "TailwindCSS",
     content:
       "One of the things I appreciate most about TailwindCSS is its comprehensive set of pre-defined utility classes.",
-  },
+      contentSpanish: ""},
   {
     id: "feature-3",
     icon: css2,
     title: "GSAP",
     content:
-    "Recently, I have been working with this tool, and it's amazing what we can do with it."
-
-  },
+      "Recently, I have been working with this tool, and it's amazing what we can do with it.",
+      contentSpanish: "" },
 ];
 
 export const feedback = [
@@ -76,8 +79,8 @@ export const feedback = [
     name: "Arte De Reyes",
     title: "React - Vite Js - Deployment - TailwindCSS",
     img: reyes,
-    link: "https://artedereyes.netlify.app/"
-  },
+    link: "https://artedereyes.netlify.app/",
+    contentSpanish: "Arte de reyes, una página dedicada al arte, podes encontrar diversos trabajos, pintura, murales y comics."},
   {
     id: "Project-2",
     content:
@@ -85,8 +88,8 @@ export const feedback = [
     name: "Vito Records",
     title: "React - Canvas - Deployment - TailwindCSS",
     img: records,
-    link: "https://vitorecordsarg.netlify.app/"
-  },
+    link: "https://vitorecordsarg.netlify.app/",
+    contentSpanish: "Productora musical. Equipada con lo último en tecnología, acompañando al artista a encontrar su camino musical"},
   {
     id: "Project-3",
     content:
@@ -95,7 +98,7 @@ export const feedback = [
     title: "React -  Vite Js -  GSAP -  TailwindCSS",
     img: cachi,
     link: "https://carlagiuliani.netlify.app/",
-  },
+    contentSpanish: "Diseño audiovisual, creación de un porfolio para un cliente especial"},
   {
     id: "Project-4",
     content:
@@ -103,7 +106,7 @@ export const feedback = [
     name: "Sanitarios Nicuesa",
     title: "React - Node - JavaScript - HTML - CSS - MySQL",
     img: sanitarios,
-  },
+    contentSpanish: "Primer trabajo grupal hecho con compañeros del instituto. Una experiencia muy gratificante haber trabajado en grupo y aprender a coordinar en equipo"},
   {
     id: "project-5",
     content:
@@ -111,39 +114,40 @@ export const feedback = [
     name: "cHolu",
     title: "React - Vite Js - Deployment - TailwindCSS",
     img: comidas,
-  },
+    contentSpanish: "Aplicación para administrar restaurant"},
   {
     id: "project-6",
-    content:
-      "My first Calculator using javaScript and node. ",
+    content: "My first Calculator using javaScript and node. ",
     name: "Calculator",
     title: "Js - Node",
     img: calcu,
-  },
+    contentSpanish: "Primera calculadora usando JavaScript"},
   {
     id: "project-7",
-    content:
-      "My first project using node, ejs, css and Github ",
+    content: "My first project using node, ejs, css and Github ",
     name: "ML Demo",
     title: "Js - Node",
     img: ml,
-  },
+    contentSpanish: "Primer trabajo usando EJS, CSS, node, JavaScript"},
 ];
 
 export const stats = [
   {
     id: "stats-1",
     title: "Proactive",
+    titleSpanish:"Proactividad",
     value: "",
   },
   {
     id: "stats-2",
     title: "Creativity",
+    titleSpanish:"Creatividad",
     value: "",
   },
   {
     id: "stats-3",
     title: "Collaboration",
+    titleSpanish:"Colaboración",
     value: "",
   },
 ];
@@ -262,7 +266,7 @@ export const skills = [
     id: "6",
     logo: css2,
   },
- 
+
   {
     id: "8",
     logo: react,

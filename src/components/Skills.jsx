@@ -2,8 +2,11 @@ import React from "react";
 import { skillsCard, skills } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import { useLanguage } from "../context/LanguageContext";
+const SkillCard = ({ icon, title, content, index }) => {
 
-const SkillCard = ({ icon, title, content, index }) => (
+  const {currentLanguage} = useLanguage()
+  return(
   <div
     className={`flex flex-row p-6 rounded-[20px]  ${
       index !== skillsCard.length - 1 ? "mb-6" : "mb-0"
@@ -23,21 +26,21 @@ const SkillCard = ({ icon, title, content, index }) => (
       </p>
     </div>
   </div>
-);
+);}
 
 const Skills = () => {
+  const {currentLanguage} = useLanguage()
   return (
     <div className="">
-      <section id="features" className={layout.section}>
+      <section id="skills" className={layout.section}>
         <div className={` items-center sm:items-start ${layout.sectionInfo}`}>
           <h2 className={`text-center sm:text-start ${styles.heading2}`}>
-            Hello World , <br className="sm:block hidden" />
-            thank you for watching.
+            {currentLanguage === "en" ?  "Skills" : "Habilidades"}
           </h2>
           <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-            As a front-end developer, I am always open to new ideas and willing
-            to collaborate with my team members to find the best possible
-            solution. 
+            {currentLanguage === "en" ? " As a front-end developer, I am always open to new ideas and willing to collaborate with my team members to find the best possible solution."
+                                      : " Como desarrollador estoy siempre buscando nuevos desafios y nuevas herramientas para aprender y aplicar a los trabajos que fui desarrollando  "}
+           
           </p>
           <Button styles="mt-10" />
         </div>

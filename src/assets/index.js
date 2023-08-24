@@ -44,7 +44,12 @@ import cachi from "./cachi-min.webp";
 import js from "./js.png";
 import express from "./express.png"
 
+import english from "./english.png";
+import spanish from "./spanish.png";
+
 export {
+  english,
+  spanish,
   cachi,
   css3,
   css2,

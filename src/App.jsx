@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { LanguageProvider } from "./context/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -90,6 +91,7 @@ const App = () => {
       onMouseEnter={textEnter}
       onMouseLeave={textLeave}
     >
+      <LanguageProvider>
       <motion.div
         className="cursor"
         variants={variants}
@@ -109,6 +111,7 @@ const App = () => {
       </div>
 
       <Banner />
+      <Projects />
       <div
         className={`bg-primary pb-8 box ${styles.paddingX} ${styles.flexStart}`}
       >
@@ -116,11 +119,11 @@ const App = () => {
           <Skills className="" />
         </div>
       </div>
-      <Projects />
 
       <ContactMe />
 
       <Footer />
+    </LanguageProvider>
     </div>
   );
 };

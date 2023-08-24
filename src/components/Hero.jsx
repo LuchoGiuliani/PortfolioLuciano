@@ -3,8 +3,17 @@ import styles from "../style";
 import { perfil } from "../assets";
 import SplitType from "split-type";
 import { gsap } from "gsap";
+import { useLanguage } from "../context/LanguageContext";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const { currentLanguage } = useLanguage();
+  const transition = { duration: 0.5, ease: "easeInOut" };
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   useEffect(() => {
     const text = new SplitType("#title_h1");
     const characters = document.querySelectorAll(".char");
@@ -36,12 +45,17 @@ const Hero = () => {
           <div className="ss:flex hidden md:mr-4 mr-0"></div>
         </div>
         <h1 className="font-poppings font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100px] leading-[75px] w-full"></h1>
-        <p className={`  ${styles.paragraph} max-w-[470px] mt-5`}>
-          Hi there! My name is{" "}
-          <em className="text-sky-400 ">Luciano Giuliani</em> and I am a
-          passionate front-end developer with a desire to constantly improve my
-          skills.
-        </p>
+        <motion.p
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          transition={transition}
+          className={` ${styles.paragraph}  max-w-[470px] mt-5`}
+        >
+          {currentLanguage === "en"
+            ? "Hi there! My name is Luciano Giuliani and I am a passionate front-end developer with a desire to constantly improve my skills."
+            : "Hola a todos! Me llamo Luciano Giuliani, me encanta el desarrollo web, principalmente el area de experiencia de usuario, siempre busco mejorar mis habilidades."}
+        </motion.p>
       </div>
 
       <div
