@@ -54,7 +54,7 @@ const Hero = () => {
         >
           {currentLanguage === "en"
             ? "Hi there! My name is Luciano Giuliani and I am a passionate front-end developer with a desire to constantly improve my skills."
-            : "Hola a todos! Me llamo Luciano Giuliani, me encanta el desarrollo web, principalmente el area de experiencia de usuario, siempre busco mejorar mis habilidades."}
+            : "Hola a todos! Me llamo Luciano Giuliani, me encanta el desarrollo web, principalmente el area de experiencia de usuario."}
         </motion.p>
       </div>
 

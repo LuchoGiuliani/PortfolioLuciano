@@ -6,7 +6,7 @@ import { useLanguage } from '../context/LanguageContext'
 const Stats = () =>  {
   const {currentLanguage} = useLanguage()
   return(
-  <section className={`${styles.flexCenter} flex-row justify-center items-center  sm:pt-16 `}>
+  <section className={`${styles.flexCenter} flex-row justify-center items-center   sm:pt-16 `}>
     {stats.map((stat) =>(
       <div key={stat.id} className={`flex-1  flex justify-center items-center flex-row m-3 mt-12`}>
         <h4 className='font-poppins font-semibold xs:text-[40px] text-[30px] xs:leading-[53px] leading-[43px] text-white '>{stat.value}</h4>
