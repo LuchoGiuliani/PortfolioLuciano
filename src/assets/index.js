@@ -41,6 +41,7 @@ import css from "./css.png";
 import css2 from "./css2.webp";
 import css3 from "./css3.webp";
 import cachi from "./cachi-min.webp";
+import hero from "./hero.png";
 import js from "./js.png";
 import express from "./express.png"
 
@@ -48,6 +49,7 @@ import english from "./english.png";
 import spanish from "./spanish.png";
 
 export {
+  hero,
   english,
   spanish,
   cachi,

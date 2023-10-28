@@ -1,4 +1,5 @@
 import {
+  hero,
   ml,
   mysql,
   node,
@@ -102,13 +103,22 @@ export const feedback = [
   {
     id: "Project-4",
     content:
+      "This is a new project using reactQuery Reduce and Typescript",
+    name: "Practica DH 2023",
+    title: "React -  Vite Js -  reactQuery -  Typescript",
+    img: hero,
+    link: "https://github.com/LuchoGiuliani/ReactQueryPractica#react--typescript--vite--reactquery--reducer-digital-huse-course",
+    contentSpanish: "Nuevo proyecto utilizando reactQuery Reduce y Typescript"},
+  {
+    id: "Project-5",
+    content:
       "My first project, built together with a group of colleagues from the Digital House course. A beautiful experience not only on a technical/individual level but also in terms of working as a team.",
     name: "Sanitarios Nicuesa",
     title: "React - Node - JavaScript - HTML - CSS - MySQL",
     img: sanitarios,
     contentSpanish: "Primer trabajo grupal hecho con compañeros del instituto. Una experiencia muy gratificante haber trabajado en grupo y aprender a coordinar en equipo"},
   {
-    id: "project-5",
+    id: "project-6",
     content:
       "Home-cooked meals made with love for the past 25 years, offering a different menu every day. ",
     name: "cHolu",
@@ -116,14 +126,14 @@ export const feedback = [
     img: comidas,
     contentSpanish: "Aplicación para administrar restaurant"},
   {
-    id: "project-6",
+    id: "project-7",
     content: "My first Calculator using javaScript and node. ",
     name: "Calculator",
     title: "Js - Node",
     img: calcu,
     contentSpanish: "Primera calculadora usando JavaScript"},
   {
-    id: "project-7",
+    id: "project-8",
     content: "My first project using node, ejs, css and Github ",
     name: "ML Demo",
     title: "Js - Node",

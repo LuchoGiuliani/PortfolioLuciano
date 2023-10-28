@@ -1,13 +1,18 @@
-import React from 'react'
-import { useLanguage } from '../context/LanguageContext'
-const Button = ({styles}) => {
-  const {currentLanguage} = useLanguage()
+import React from "react";
+import { useLanguage } from "../context/LanguageContext";
+const Button = ({ styles }) => {
+  const { currentLanguage } = useLanguage();
   return (
-   <a target='_blank' href="https://wa.me/+541134936556"> <button type='button' className={`hover:scale-110 transition delay-100 py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none ${styles} rounded-[10px]`}>
-     {currentLanguage === "en" ? "Get in touch" :"Contacto"}
-    </button>
-  </a>
-  )
-}
+    <a target="_blank" href="https://wa.me/+541134936556">
+      {" "}
+      <button
+        type="button"
+        className={`hover:scale-110 transition delay-100 py-4 px-6 bg-blue-gradient font-poppins font-medium text-[18px] text-primary outline-none ${styles} rounded-[10px]`}
+      >
+        {currentLanguage === "en" ? "Get in touch" : "Contacto"}
+      </button>
+    </a>
+  );
+};
 
-export default Button
+export default Button;
