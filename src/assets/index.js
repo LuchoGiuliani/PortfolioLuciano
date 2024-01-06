@@ -4,7 +4,7 @@ import card from "./card.png";
 
 import logo from "./logo.png";
 import quotes from "./quotes.svg";
-import skinPlace from "./skinPlace.png"
+import skinPlace from "./skinplace.png"
 import calcu from "./calcu.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
