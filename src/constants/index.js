@@ -1,6 +1,7 @@
 import {
   hero,
   ml,
+  skinPlace,
   mysql,
   node,
   css,
@@ -22,7 +23,10 @@ import {
   js,
   css2,
   express,
+  inmo,
   calcu,
+  docker,
+  newCachi
 } from "../assets";
 
 export const navLinks = [
@@ -107,7 +111,7 @@ export const feedback = [
     name: "Practica DH 2023",
     title: "React -  Vite Js -  reactQuery -  Typescript",
     img: hero,
-    link: "https://github.com/LuchoGiuliani/ReactQueryPractica#react--typescript--vite--reactquery--reducer-digital-huse-course",
+    link: "https://practica-dh-mod1.netlify.app/",
     contentSpanish: "Nuevo proyecto utilizando reactQuery Reduce y Typescript"},
   {
     id: "Project-5",
@@ -127,18 +131,42 @@ export const feedback = [
     contentSpanish: "Aplicación para administrar restaurant"},
   {
     id: "project-7",
+    content:
+      "This project has been oriented to be a real state market ",
+    name: "Inmo TakaWashi",
+    title: "React - Vite Js - Deployment - TailwindCSS",
+    img: inmo,
+    contentSpanish: "Proyecto orientado a el mercado inmobiliario"},
+  {
+    id: "project-8",
     content: "My first Calculator using javaScript and node. ",
     name: "Calculator",
     title: "Js - Node",
     img: calcu,
     contentSpanish: "Primera calculadora usando JavaScript"},
   {
-    id: "project-8",
+    id: "project-9",
     content: "My first project using node, ejs, css and Github ",
     name: "ML Demo",
     title: "Js - Node",
     img: ml,
     contentSpanish: "Primer trabajo usando EJS, CSS, node, JavaScript"},
+  {
+    id: "project-10",
+    content: "Using fetching and filtering API ",
+    name: "SkinPlace",
+    title: "Js - Vite - GithubPages",
+    link: "https://luchogiuliani.github.io/skinPlace/",
+    img: skinPlace,
+    contentSpanish: "Usando fetching y filtrando una APi, subiendo informacion a GithubPages"},
+  {
+    id: "project-11",
+    content: "Portfolio Carla Audiovisual",
+    name: "Portfolio Carla Audiovisual",
+    title: "Js - Vite - GithubPages",
+    link: "https://newportfoliocarla.netlify.app/",
+    img: newCachi,
+    contentSpanish: "Rediseñando pagina para un portfolio"},
 ];
 
 export const stats = [
@@ -284,5 +312,9 @@ export const skills = [
   {
     id: "9",
     logo: tailwind,
+  },
+  {
+    id: "10",
+    logo: docker,
   },
 ];

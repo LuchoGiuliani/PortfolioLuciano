@@ -26,15 +26,22 @@ const App = () => {
   const [cursorVariant, setCursorVariant] = useState("default");
 
   useEffect(() => {
+    let animationFrameId;
+
     const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
+      animationFrameId = requestAnimationFrame(() => {
+        setMousePosition({
+          x: e.clientX,
+          y: e.clientY,
+        });
       });
     };
-    window.addEventListener("mousemove", mouseMove);
+
+    window.addEventListener("mousemove", mouseMove, { passive: true });
+
     return () => {
       window.removeEventListener("mousemove", mouseMove);
+      cancelAnimationFrame(animationFrameId);
     };
   }, []);
 
@@ -50,10 +57,9 @@ const App = () => {
       y: mousePosition.y - 3,
     },
   };
+
   const textEnter = () => setCursorVariant("text");
   const textLeave = () => setCursorVariant("default");
-
- 
   
 
 

@@ -11,10 +11,10 @@ const Navbar = () => {
   const { currentLanguage, toggleLanguage } = useLanguage();
   
   return (
-    <nav className="w.full flex pt-2 sm:pt-6 justify-between items-center navbar">
+    <nav className=" flex pt-2 sm:pt-6 justify-between items-center navbar z-[9999]  ">
       {/* <img src={logo} alt="hoobank" className="w-[162px] h-[76px]" /> */}
-      <h1 className="text-white  text-lg">Luciano Giuliani</h1>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      <h1 className="text-gradient text-lg">Luciano Giuliani</h1>
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1 z-[9999]">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -27,17 +27,17 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="sm:hidden flex flex-1 justify-end items-center z-[9999]">
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain"
+          className="w-[100%] h-[28px] "
           onClick={() => setToggle((prev) => !prev)}
         />
         <div
           className={`${
             toggle ? "flex" : "hidden"
-          } p-1 bg-black-gradient absolute  my-2   mx-4  rounded-xl sidebar`}
+          } p-1 bg-black-gradient absolute  my-2   mx-4  rounded-xl sidebar z-[9999]`}
         >
           <ul className="list-none flex gap-2 justify-center   ">
             {navLinks.map((nav, index) => (

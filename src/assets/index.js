@@ -1,13 +1,10 @@
-
-
+import inmo from "./video2.png";
 
 import card from "./card.png";
 
-
 import logo from "./logo.png";
 import quotes from "./quotes.svg";
-
-
+import skinPlace from "./skinPlace.png"
 import calcu from "./calcu.png";
 import send from "./Send.svg";
 import shield from "./Shield.svg";
@@ -23,6 +20,7 @@ import instagram from "./instagram.svg";
 import linkedin from "./linkedin.svg";
 import twitter from "./twitter.svg";
 import ml from "./ML.png";
+import newCachi from "./newCachi.png"
 
 
 import perfil from "./perfil_min.png";
@@ -43,12 +41,15 @@ import css3 from "./css3.webp";
 import cachi from "./cachi-min.webp";
 import hero from "./hero.png";
 import js from "./js.png";
-import express from "./express.png"
-
+import express from "./express.png";
+import docker from "./docker.jpg"
 import english from "./english.png";
 import spanish from "./spanish.png";
 
 export {
+  skinPlace,
+  newCachi,
+  docker,
   hero,
   english,
   spanish,
@@ -72,13 +73,10 @@ export {
   perfil,
   ml,
   calcu,
-  
+  inmo,
   card,
- 
-
   logo,
   quotes,
- 
   send,
   shield,
   star,
@@ -92,7 +90,4 @@ export {
   instagram,
   linkedin,
   twitter,
- 
-  
-  
 };
