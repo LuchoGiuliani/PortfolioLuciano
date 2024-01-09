@@ -164,7 +164,7 @@ export const feedback = [
     content: "Portfolio Carla Audiovisual",
     name: "Portfolio Carla Audiovisual",
     title: "Js - Vite - GithubPages",
-    link: "https://newportfoliocarla.netlify.app/",
+    link: "https://carlamgiuliani.netlify.app/",
     img: newCachi,
     contentSpanish: "Rediseñando pagina para un portfolio"},
 ];
